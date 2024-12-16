@@ -1,5 +1,5 @@
-@import './components/Navigations.scss';
-@import './components/Right.scss';
+@use './components/Navigation/Navigations.scss';
+@use './components/RightProducts/Right.scss';
 
 .main-layout {
     width: 100vw;
@@ -9,4 +9,3 @@
     justify-content: space-between;
     align-items: stretch;
 }
-
