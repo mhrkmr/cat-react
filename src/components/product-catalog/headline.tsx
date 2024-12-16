@@ -6,8 +6,10 @@ interface HeadlineProps {
 
 const Headline: React.FC<HeadlineProps> = ({ text }) => {
 	return (
-		<div className="headline-div">
-			<span className="headline-text">{text}</span>
+		<div className="headline-top-div">
+			<div className="headline-div">
+				<span className="headline-text">{text}</span>
+			</div>
 		</div>
 	);
 };

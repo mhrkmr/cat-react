@@ -1,5 +1,3 @@
-@use "./nav-item.scss" as nav-item;
-
 .navigation {
 	width: 20%;
 
@@ -33,62 +31,62 @@
 		overflow-y: auto;
 		gap: 10px;
 
-        .nav-list {
-            display: flex;
+		.nav-list {
+			display: flex;
 
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 8px;
-            width: 100%;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 8px;
+			width: 100%;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 
-        .bottom-nav-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 8px;
-            width: 100%;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-    }
+		.bottom-nav-list {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 8px;
+			width: 100%;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
 
 	.nav-footer {
-        width: 100%;
-        padding: 6px 32px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 6px;
+		width: 100%;
+		padding: 6px 32px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 6px;
 
-        .footer-link {
-            width: max-content;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
+		.footer-link {
+			width: max-content;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+			text-decoration: none;
 
-            .link-text {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: normal;
-                color: var(--neutrals-4, #999999);
-            }
-        }
-    }
+			.link-text {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: normal;
+				color: var(--neutrals-4, #999999);
+			}
+		}
+	}
 }

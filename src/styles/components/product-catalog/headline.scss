@@ -1,0 +1,24 @@
+.headline-top-div {
+    width: 100%;
+    padding: 22px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .headline-div {
+        width: max-content;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .headline-text {
+            font-weight: 700;
+            line-height: normal;
+            color: var(--neutrals-0);
+        }
+    }
+}

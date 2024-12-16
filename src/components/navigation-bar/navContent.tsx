@@ -5,10 +5,7 @@ const NavContent = () => {
 				<div className="nav-item ">
 					<div className="nav-link">
 						<span className="link-icon">
-							<img
-								src="../../assets/svg/home.svg"
-								alt="home"
-							/>
+							<img src="../../assets/svg/home.svg" alt="Home"/>
 						</span>
 						<span className="link-text">Home</span>
 					</div>
@@ -18,7 +15,7 @@ const NavContent = () => {
 				<div className="nav-item ">
 					<div className="nav-link">
 						<span className="link-icon">
-							<img src="../../assets/svg/chat-icon.svg" alt="" />
+							<img src="../../assets/svg/chat-icon.svg" alt="FAQs" />
 						</span>
 						<span className="link-text">FAQs</span>
 					</div>

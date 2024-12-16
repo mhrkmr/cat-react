@@ -1,5 +1,6 @@
-@use './components/Navigation/Navigations.scss';
-@use './components/RightProducts/Right.scss';
+@use './components/navigation/index.scss' as nav;
+@use './components/product-catalog/index.scss' as pro-cat;
+
 
 .main-layout {
     width: 100vw;
