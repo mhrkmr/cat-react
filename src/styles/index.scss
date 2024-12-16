@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --neutrals-0: #0d0d0d;
+    --neutrals-1: #3b3b3b;
+    --neutrals-2: #666666;
+    --neutrals-3: #808080;
+    --neutrals-4: #b3b3b3;
+    --neutrals-5: #cccccc;
+    --neutrals-6: #d9d9d9;
+    --neutrals-7: #e6e6e6;
+    --neutrals-8: #f2f2f2;
+    --neutrals-85: #f5f5f5;
+    --neutrals-9: #ffffff;
+    --accent-red: #ae0909;
+    --accent-red-lite: #fee7e7;
+    --accent-red-dark: #7e0707;
+    --accent-red-dull: #fccfcf;
+    --accent-green: #067966;
+    --accent-green-lite: #cbe8df;
+    --accent-green-dark: #055c4e;
+    --accent-green-dull: #eefbf4;
+    --accent-yellow-dark: #c2780a;
+    --accent-yellow: #f5ab3d;
+    --accent-yellow-lite: #fef5e7;
+    --accent-yellow-dull: #fceacf;
+    --accent-purple: #5c3df5;
+    --accent-purple-lite: #ebe7fe;
+    --accent-purple-dark: #290ac2;
+    --accent-purple-dull: #d6cffc;
+    --primary-0: #061a79;
+    --primary-1: #081f91;
+    --primary-2: #0916aa;
+    --primary-3: #0916aa;
+    --primary-4: #0b2eda;
+    --primary-5: #2547f4;
+    --primary-6: #6e85f7;
+    --primary-7: #9eadfa;
+    --primary-8: #cfd6fc;
+    --primary-9: #f0f3fe;
+    --gradient-button: linear-gradient(120deg, rgba(22, 51, 163, 1) 12.95%, rgba(166, 43, 16, 1) 100%);
+    --gradient-button-hover: linear-gradient(119deg, rgba(22, 51, 163, 1) 12.95%, rgba(166, 43, 16, 1) 100%);
+    --gradient-new: linear-gradient(121deg, rgba(22, 51, 163, 1) 12.95%, rgba(231, 65, 65, 1) 100%), linear-gradient(to left, #2b3ca1, #2b3ca1);
+    --fm-1: "Patrick Hand", cursive;
+    --fm-2: font-family: "Unbounded", sans-serif;
+}
