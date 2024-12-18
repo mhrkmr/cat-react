@@ -1,6 +1,6 @@
 .product-list-wrapper {
     flex:1;
-
+    overflow: auto;
     .product-list {
         padding: 24px 32px;
         width: 100%;
@@ -9,6 +9,5 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 12px;
-        cursor: pointer;
     }
 }

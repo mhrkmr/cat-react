@@ -1,11 +1,12 @@
 .product-catalog {
     width: 80%;
+    flex: 1;
     background-color: var(--neutrals-24, #f2f2f2);
     overflow: auto;
 
     .product-catalog-wrapper {
         width: 100%;
-        overflow-y: auto;
+        overflow-y: hidden;
         height: 100%;
         display: flex;
         flex-direction: column;
