@@ -1,3 +1,5 @@
+// @use 'nav-item.scss' as nn;
+
 .navigation {
 	width: 20%;
 
@@ -31,7 +33,8 @@
 		overflow-y: auto;
 		gap: 10px;
 
-		.nav-list {
+		.nav-list,
+        .bottom-nav-list {
 			display: flex;
 
 			flex-direction: column;
@@ -42,18 +45,7 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
-		}
 
-		.bottom-nav-list {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			gap: 8px;
-			width: 100%;
-			list-style: none;
-			margin: 0;
-			padding: 0;
 		}
 	}
 

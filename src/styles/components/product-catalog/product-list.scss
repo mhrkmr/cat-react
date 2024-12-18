@@ -1,0 +1,14 @@
+.product-list-wrapper {
+    flex:1;
+
+    .product-list {
+        padding: 24px 32px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+        cursor: pointer;
+    }
+}

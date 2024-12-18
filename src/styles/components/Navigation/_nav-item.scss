@@ -34,11 +34,11 @@
         }
     }
 
-    .nav-item.nav-item-active { 
+    &.nav-item-active { 
         .nav-link {
             color: var(--primary-4, #2b3ca1);
             background: var(--primary-9, #eef0fa);
             font-weight: 600;
         }
     }
-}
+}   
