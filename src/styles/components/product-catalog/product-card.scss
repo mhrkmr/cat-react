@@ -6,61 +6,64 @@
 	cursor: pointer;
 	position: relative;
 
-    .on-hover-div {
-        display: none;
-        justify-items: start;
-        align-items: center;
-        grid: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+	.on-hover-div {
+		display: none;
+		justify-items: start;
+		align-items: center;
+		grid: 1fr 1fr 1fr 1fr/ 1fr 1fr;
 
-        border-radius: 5px;
+		border-radius: 5px;
 
-        padding: 16px 16px 16px 16px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: transparent;
+		padding: 16px 16px 16px 16px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: transparent;
 
-        .card-name-div {
-            grid-column: 1 / 3;
-            grid-row: 1;
-            height: 100%;
+		.card-name-div {
+			grid-column: 1 / 3;
+			grid-row: 1;
+			height: 100%;
 
-            padding: 7% 2% 2% 2%;
-            align-self: end;
-            align-content: center;
+			padding: 7% 2% 2% 2%;
+			align-self: end;
+			align-content: center;
 
-            border-radius: 5px;
+			border-radius: 5px;
 
-            width: 100%;
+			width: 100%;
 
-            background-color: #ffffffaa;
+			backdrop-filter: blur(10px);
+			background-color: #f0f3fe45;
+
+			text-shadow: 0 0 3px var(--primary-8);
 
 			.product-name {
-                font-size: 1.1rem;
+				font-size: 1.1rem;
 				text-shadow: 0 0 3px var(--primary-8);
-                width: 100%;
+				width: 100%;
 
-                border-radius: 5px;
+				border-radius: 5px;
 			}
-        }
+		}
 
-        .card-description-div {
-            grid-column: 1 / 3;
-            grid-row: 3/5;
-            height: 100%;
+		.card-description-div {
+			grid-column: 1 / 3;
+			grid-row: 3/5;
+			height: 100%;
 
-            padding: 2% 2% 2% 2%;
-            align-self: end;
-            align-content: center;
+			padding: 2% 2% 2% 2%;
+			align-self: end;
+			align-content: center;
 
-            width: 100%;
+			width: 100%;
 
-            background-color: #ffffffaa;
+			backdrop-filter: blur(10px);
+			background-color: #f0f3fe45;
 
-        }
-
-    }
-
+			text-shadow: 0 0 3px var(--primary-8);
+		}
+	}
 
 	.card-image {
 		padding: 30px 16px 10px;
@@ -68,21 +71,21 @@
 		height: 100%;
 		position: absolute;
 
-        .discount-div {
-            display: flex;
-            border-radius: 15px;
+		.discount-div {
+			display: flex;
+			border-radius: 15px;
 
-            background-color: var(--accent-red);
-            min-width: 1rem;
-            min-height: 1rem;
-            position: absolute;
-            right: 16px;
-            top: 16px;
+			background-color: var(--accent-green);
+			min-width: 1rem;
+			min-height: 1rem;
+			position: absolute;
+			right: 16px;
+			top: 16px;
 
-            .discount {
-                display: none;
-            }
-        }
+			.discount {
+				display: none;
+			}
+		}
 
 		img {
 			border-radius: 5px;
@@ -104,47 +107,46 @@
 		background: transparent;
 
 		.card-name-div {
-            height: 1.2rem;
+			height: 1.2rem;
 			.product-name {
-                font-size: 1.1rem;
-                // color: var(--primary-4);
+				font-size: 1.1rem;
+				// color: var(--primary-4);
 				text-shadow: 0 0 3px var(--primary-8);
 			}
 		}
 	}
 
-    &:hover {
+	&:hover {
 		background: var(--primary-8);
-        transition-duration: 100ms;
+		transition-duration: 500ms;
 
-        .card-image{
-            padding: 16px;
+		.card-image {
+			padding: 16px;
+            transition-duration: 500ms;
 
-            .discount-div {
+			.discount-div {
+				border-radius: 0px 5px 0px 5px;
+				padding: 1%;
+				color: #ffffff;
+				min-width: 3rem;
 
-                border-radius: 5px;
-                padding: 1%;
-                color: #ffffff;
-                min-width: 3rem;
+				justify-content: end;
 
-                justify-content: end;
+				.discount {
+					display: inline;
+				}
+				z-index: 1;
+			}
 
-                .discount {
-                    display: inline;
-                }
-                z-index: 1;
-            }
-
-            img {
+			img {
 				background: #ffffff;
 				box-shadow: 0 0 8px var(--primary-1);
-                transition-duration: 100ms;
 			}
-        }
+		}
 
-        .on-hover-div {
-            display: grid;
-        }
+		.on-hover-div {
+			display: grid;
 
+		}
 	}
 }

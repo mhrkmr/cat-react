@@ -1,0 +1,25 @@
+.searchbox-div {
+    flex: 1;
+    display: block;
+    height: 100%;
+    width: fit-content;
+    align-self: left;
+    position: relative;
+
+    .text-box {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 5%;
+        font-size: inherit;
+        z-index: 1;
+        text-align: inherit;
+
+        &:placeholder {
+            z-index: 2;
+            color: blue;
+        }
+    }
+
+
+}

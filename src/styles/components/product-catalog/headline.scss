@@ -7,6 +7,10 @@
     align-items: center;
     border-bottom: solid 1px #e6e6e6;
 
+    &.midtext{
+        border-bottom: none;
+        justify-content: center;
+    }
 
     .headline-div {
         width: max-content;
