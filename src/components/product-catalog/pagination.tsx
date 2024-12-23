@@ -27,11 +27,13 @@ const Pagination = ({
 	const wideView = width > 775;
 	const narrowView = width < 516;
 
-	let maxButton;
+	let maxButton: number = 7;
 	if (wideView) {
 		maxButton = 7;
 	} else {
-		maxButton = 5;
+		if (!narrowView) {
+			maxButton = 5;
+		}
 		if (narrowView) {
 			maxButton = 3;
 		}
@@ -83,32 +85,33 @@ const Pagination = ({
 						<div
 							key={index}
 							className={
-								index + currentPage > 2 &&
-								index + currentPage - Math.floor(maxButton / 2) + 1 < totalPages
+								index + currentPage - Math.floor(maxButton / 2) > 1 &&
+								index + currentPage - Math.floor(maxButton / 2) < totalPages
 									? "box"
 									: "box hide"
-							}>
-							{index === 0 && currentPage > 2 && (
+							}
+						>
+							{index === 0 && currentPage - Math.floor(maxButton / 2) >= 3 && (
 								<div className="dots">...</div>
 							)}
 							<button
-								id={`${index + currentPage - Math.floor(maxButton / 2) + 1}`}
+								id={`${index + currentPage - Math.floor(maxButton / 2)}`}
 								onClick={() =>
 									handlePageChange(
-										index + currentPage - Math.floor(maxButton / 2) + 1
+										index + currentPage - Math.floor(maxButton / 2)
 									)
 								}
 								className={
 									currentPage ===
-									index + currentPage - Math.floor(maxButton / 2) + 1
+									index + currentPage - Math.floor(maxButton / 2)
 										? "nav-button active"
 										: "nav-button"
 								}
 							>
-								{index + currentPage - Math.floor(maxButton / 2) + 1}
+								{index + currentPage - Math.floor(maxButton / 2)}
 							</button>
 							{index === maxButton - 1 &&
-								currentPage + Math.ceil(maxButton / 2) + 1 < totalPages && (
+								currentPage + Math.ceil(maxButton / 2) < totalPages && (
 									<div className="dots">...</div>
 								)}
 						</div>

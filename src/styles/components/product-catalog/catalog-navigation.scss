@@ -20,7 +20,8 @@
         background-color: var(--primary-4);
 
         &.active {
-            box-shadow: 0 0 12px var(--primary-2), 0 0 8px var(--primary-2), 0 0 4px var(--primary-2), 0 0 2px var(--primary-2);
+            // box-shadow: 0 0 12px #ffffff, 0 0 8px var(--primary-2), 0 0 4px var(--primary-2), 0 0 2px var(--primary-2);
+            background-color: var(--primary-1);
         }
 
         &:disabled{
