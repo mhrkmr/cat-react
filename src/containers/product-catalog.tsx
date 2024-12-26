@@ -1,9 +1,7 @@
-import Headline from "../components/product-catalog/headline";
+import Headline from "../components/shared/headline";
 import ProductList from "../components/product-catalog/productList";
 
 const ProductCatalog = () => {
-
-
 	return (
 		<div className="product-catalog">
 			<div className="product-catalog-wrapper">

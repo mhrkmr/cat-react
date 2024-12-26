@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Product } from "../../interface/products/products.type";
 
 // Define props interface for ProductCard
@@ -6,15 +7,14 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ children }: ProductCardProps) => {
+	const navigate = useNavigate();
 	return (
-		<div className="card-box">
+		<div className="card-box" onClick={() => navigate(`/${children?.id}`)}>
 			{!children && <div> NA </div>}
 			{children && (
 				<div className="card-details">
 					<div className="card-name-div">
-						<span className="product-name">
-							{children.title}
-						</span>
+						<span className="product-name">{children.title}</span>
 					</div>
 				</div>
 			)}
@@ -33,14 +33,10 @@ const ProductCard = ({ children }: ProductCardProps) => {
 			{children && (
 				<div className="on-hover-div">
 					<div className="card-name-div">
-						<span className="product-name">
-							{children.title}
-						</span>
+						<span className="product-name">{children.title}</span>
 					</div>
 					<div className="card-description-div">
-						<span className="description">
-							{children.description}
-						</span>
+						<span className="description">{children.description}</span>
 					</div>
 				</div>
 			)}

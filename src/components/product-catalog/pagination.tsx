@@ -17,8 +17,6 @@ const Pagination = ({
 
 	const handlePageChange = (page: number) => {
 		setCurrentPage(page);
-		console.log(currentPage);
-		console.log(page);
 		onPageChange(page); // Notify parent component of the page change
 	};
 
@@ -40,7 +38,6 @@ const Pagination = ({
 	}
 
 	useEffect(() => {
-		console.log("Current Page Updated:", currentPage);
 	}, [currentPage]);
 
 	return (

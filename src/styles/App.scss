@@ -1,5 +1,6 @@
 @use './components/navigation/index.scss' as nav;
 @use './components/product-catalog/index.scss' as pro-cat;
+@use './components/product-page/index.scss' as pro-page;
 
 
 .main-layout {
@@ -9,4 +10,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+
+    position: relative;
 }

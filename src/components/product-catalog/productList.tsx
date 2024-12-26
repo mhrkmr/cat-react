@@ -7,6 +7,7 @@ import {
 	ProductsResponse,
 } from "../../interface/products/products.type";
 
+
 const ProductList = () => {
 	const [productsData, setProductsData] =
 		useState<ProductsResponse | null>(null);
@@ -24,32 +25,11 @@ const ProductList = () => {
 					20 * (pageNumber - 1)
 				);
 
-			console.log(products);
-
 			return products;
 		} catch (error) {
 			console.error(error);
 			setError("Failed to fetch products.");
-			return {
-				products: [
-					{
-						id: -1,
-						title: "",
-						description: "",
-						price: -1,
-						discountPercentage: -1,
-						rating: -1,
-						stock: -1,
-						brand: "",
-						category: "",
-						thumbnail: "",
-						images: [""],
-					},
-				],
-				total: -1,
-				skip: -1,
-				limit: -1,
-			};
+			return null;
 		}
 	};
 

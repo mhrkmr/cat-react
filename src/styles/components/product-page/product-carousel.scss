@@ -1,0 +1,54 @@
+.product-carousel {
+    padding: 3%;
+    height: 60%;
+    aspect-ratio: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+
+    border: 1px solid var(--neutrals-4);
+    border-radius: 16px;
+    background-color: #ffffff;
+
+    .main-image-div {
+        height: 80%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        img {
+            height: 100%;
+        }
+    }
+
+    .image-flex {
+        display: flex;
+        height: 20%;
+        gap: 30px;
+        overflow: scroll;
+        padding: 0.3rem;
+        max-width: 100%;
+        min-width: 0;
+
+        .scroll-image {
+            height: 100%;
+            aspect-ratio: 1;
+            border: 1px solid var(--neutrals-4);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+
+            &.is-active {
+                border: 1px solid var(--primary-4);
+                box-shadow: 2px 2px var(--primary-4);
+            }
+
+            img {
+                height: 100%
+            };
+        }
+    }
+}

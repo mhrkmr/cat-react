@@ -1,20 +1,21 @@
-.product-catalog {
+.product-page {
     width: 80%;
     flex: 1;
     background-color: var(--neutrals-24, #f2f2f2);
-    overflow: auto;
+    min-width: 0;
 
-    .product-catalog-wrapper {
+    .product-page-wrapper {
         width: 100%;
         overflow-y: hidden;
         height: 100%;
         display: flex;
         flex-direction: column;
+        min-width: 0;
     }
 }
 
 @media screen and (max-width: 1080px) {
-    .product-catalog-wrapper {
-        padding-bottom: 2rem;
+    .product-page-wrapper {
+        padding-bottom: 3rem;
     }
 }
